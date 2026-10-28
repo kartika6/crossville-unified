@@ -7,17 +7,16 @@ A runnable, local-first research app connecting **Capture → Organize → Agree
 Install **Node.js 24 or newer** (includes npm). Open a terminal and run:
 
 ```sh
-git clone https://github.com/kartika6/crossville-unified.git
-cd crossville-unified
+cd "/Users/kartika/Documents/ChatGPT/Crossvile/unified-app"
 npm ci
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
-Open **http://127.0.0.1:5173/** in your browser. Leave that terminal running. Stop with **Ctrl+C**. Alternatively download this repository as a ZIP, extract it and open a terminal in the extracted folder before running `npm ci`. The lockfile pins tested dependencies; use `npm install` if intentionally updating them.
+Open **http://127.0.0.1:5173/** in your browser. Leave that terminal running. Stop with **Ctrl+C**. On another computer, replace the `cd` path with the folder containing this README. The lockfile pins tested dependencies; use `npm install` if intentionally updating them.
 
 ## Tests, type check and production build
 
-Run from the repository folder:
+Run from the same `unified-app` folder:
 
 ```sh
 npm test
@@ -55,8 +54,8 @@ Research mode provides six scenarios, **Baseline** manual text handoff and **Cro
 
 ## Sources and limitations
 
-- The available original React prototype remains intact in the original integration workspace (`Crossvile/src`); it is not duplicated in this standalone repository. Its models, layout, roles and impact/task review informed the unified implementation.
-- The original GitHub prototype from the supplied ZIP remains intact in the original integration workspace (`Crossvile/chatgpt-prototype`); it is not duplicated here. Its fixtures, milestone/source data and private-workspace module are integrated here, rather than embedded as a separate app.
+- The available root React prototype remains intact in `../src`. Its models, layout, roles and impact/task review informed the unified implementation.
+- The GitHub prototype from the supplied ZIP remains intact in `../chatgpt-prototype`. Its fixtures, milestone/source data and private-workspace module are integrated here, rather than embedded as a separate app.
 - Prototype A's public Figma Make preview was inspected for sorting, consensus, constraint and question interactions. Its local exported source/assets are still unavailable; exact source-level preservation cannot be certified. The original gestures are replaced by accessible buttons/keyboard controls. Providing its exported code ZIP would enable exact remaining comparisons and asset reuse.
 - All provider integrations, retrieval, extraction and replies are simulations. No proprietary account connection, model API, real background agent, authentication or realtime multi-user database is implemented or claimed.
 - Client roles and local private sessions are research controls, not secure account isolation. localStorage has browser quota limits. Full project exports contain local private simulation data. Use fictional materials.
@@ -72,16 +71,27 @@ Research mode provides six scenarios, **Baseline** manual text handoff and **Cro
 - [docs/CONTEXT_HANDOFF.md](docs/CONTEXT_HANDOFF.md): implementation handoff for future developers.
 
 
-## Live prototype and GitHub Pages
+## GitHub Pages deployment
 
-**Open the interactive prototype:** https://kartika6.github.io/crossville-unified/
+Live prototype: https://kartika6.github.io/crossville-unified/
 
-The public GitHub Pages site serves an explicit production snapshot from the root of the `gh-pages` branch. The `main` branch contains editable source.
+Build for the repository subpath with `npm run build:pages`. Publish the contents of `dist/` (plus an empty `.nojekyll` file) to the `gh-pages` branch. GitHub Pages is configured to serve the root of that branch. The `main` branch holds editable source; deployments are explicit snapshots and do not automatically rebuild after source edits. No participant browser data is included in the deployed static files.
+
+## Automated adaptive experience
+
+The default interface is now the three-column adaptive research simulation. Open **Guided story** and follow its seven scenes, or work freely in **My workspace**. Starting a Codex task triggers local context delivery automatically. Routine approved updates synchronize without another transfer action; policy-held critical changes require review. **Automation settings** contains all three study conditions, engine stepping, backups and JSON/CSV log export.
+
+Use Node.js 24 or newer:
 
 ```sh
-npm ci
+cd unified-app
+npm install
+npm run dev
 npm test
-npm run build:pages
+npm run check
+npm run build
 ```
 
-`build:pages` uses the `/crossville-unified/` asset base path. To update the hosted prototype, publish the contents of `dist/` plus an empty `.nojekyll` file to the `gh-pages` branch. Source edits on `main` do not automatically rebuild the hosted snapshot. No participant browser data, personal localStorage state, credentials or installed dependencies are deployed.
+If already inside `unified-app`, omit the first command. The local URL is printed by Vite. No account, API key or backend is required. The automated implementation is under `src/adaptive`; original collaboration features remain available under the shared workspace’s **Organize project context** disclosure. Existing saved project data migrates and the original storage record remains restorable. Reset Demo deliberately replaces the active demo; export a backup first.
+
+See `VISUAL_REUSE.md`, `ARCHITECTURE.md`, and `RESEARCH_MODE.md`. External AI conversations, context transfers, collaborators and acknowledgements are simulations. None sends information to ChatGPT, Claude, Codex, Gemini, Cursor or NotebookLM.

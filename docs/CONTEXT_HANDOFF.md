@@ -11,8 +11,3 @@ Canonical decisions/constraints are conservative critical sync candidates; task-
 Baseline removes structured navigation and rejects structured mutations at the domain boundary. Scenario reset clears prior state/logs and creates a new session; export before resetting. Logs describe actions, not inferred research results.
 
 Verification details are maintained in `../VERIFICATION.md`. Next work with supplied Figma code: compare original source-level interactions/assets against FEATURE_MATRIX, port any verified missing behavior into the same store, and rerun critical tests. Real integrations and server collaboration require separate adapters and authorization; do not add model accounts or proprietary API calls as part of local prototype maintenance.
-
-
-## Standalone repository publication — 2026-10-27
-
-Published source layout is the repository root of `kartika6/crossville-unified`. The original integration workspace folder was `unified-app`; audit references to sibling prototype directories describe that original workspace, not additional required dependencies. All runtime source, fixtures, vendored private simulation, tests and documentation needed by this app are included here. No dependencies, local browser study state, participant data, credentials or build caches are uploaded. The original private team repository is unchanged. Verification: 35 unified tests, strict TypeScript and Vite 8.3.5 production build passed before publication.

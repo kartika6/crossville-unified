@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App";
+import App from "./adaptive/AdaptiveApp";
 import "./styles.css";
 import "./unified.css";
 createRoot(document.getElementById("root")!).render(

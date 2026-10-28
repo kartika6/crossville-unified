@@ -30,3 +30,11 @@ JSON exports retain complete event records; CSV quotes every field and doubles e
 
 ## Simulation boundaries
 No real provider receives information. Keyword retrieval, extracted candidates and conversation replies are scripted. User switching represents local role simulation. Project permissions are prototype rules, not account isolation. No private participant AI history is necessary. No research outcomes have been claimed.
+
+## Automated study conditions
+
+The adaptive app offers A: manual baseline, B: automated opaque, C: automated explainable. A starts tasks without queued delivery and requires participant selection/summary/load. B and C run identical selection and delivery logic; only C exposes selection reasons, sources, exclusions and detailed event inspection. Shared project facts and seeded task content are constant. Settings restore v4 and issue a new session when switching condition. Switching is blocked during an unfinished study task. Export logs before resetting or changing condition.
+
+The seven-scene guided demonstration uses meaningful milestones, not timed screenshots: inspect v4; privately explore action research in Claude; propose and approve as Professor to v5; start Codex development to trigger delivery; submit NotebookLM's two low-risk findings and approve to v6; inspect Codex sync; complete Codex work and approve the detected interruption question to v7. Back navigates earlier scenes without rolling back history. Restart/Reset restores the fixture. In condition A use the manual preparation area at the same task transitions; the story's automation explanations describe the experimental automated condition.
+
+Pause, slow and single-step controls affect actual queued state transitions. JSON/CSV logs include session, condition, scenario/task, timestamps, event type, relevant IDs and recipient version. Full backups include private fictional notes. No performance scores or research outcomes are fabricated. The prototype is a local multi-person simulation; scripted AI responses and delivery acknowledgements are explicitly labeled.

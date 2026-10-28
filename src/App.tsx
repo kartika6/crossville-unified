@@ -2427,3 +2427,6 @@ function ResetDialog({
     </dialog>
   );
 }
+
+// Reused by the adaptive shell with the same canonical store and transitions.
+export { Workspace as ProjectTools, Library as ContextLibrary, Access as PeopleAccess, ItemWorkflow, Discussion };

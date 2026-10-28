@@ -54,3 +54,7 @@ Overview → Shared workspace → Context library → Handoff builder → Agent 
 - [x] Add research conditions/scenarios and JSON/CSV logs.
 - [x] Document intentional changes and simulation boundaries.
 - [ ] Verify A against its original source/assets (local files unavailable).
+
+## Updated source availability and adaptive redesign
+
+Figma Make source is now available at `../figma-reference/crossville_figma_make_updated_source/` and has been inspected. The earlier missing-source limitation no longer applies. See `VISUAL_REUSE.md` for component/asset reuse and deliberate consolidation. The deployed Story reference was inspected in-browser for overall hierarchy and shared/private work patterns. Its manual transfer interactions were deliberately replaced by the event-driven adaptive service requested in the new specification.

@@ -1,0 +1,9 @@
+# Source reuse and interaction changes
+
+Inspected the deployed guided Story reference and extracted Figma Make source in `../figma-reference/crossville_figma_make_updated_source/`, including Workspace, SortModal, DecisionsPanel, ConstraintsPanel, QuestionsPanel, consensus and index.css.
+
+Retained Story patterns: compact project sidebar, shared/private separation, four shared context cards, person/tool attribution, version indicators, right-side review/context inspector and floating seven-scene guide. Retained Figma detail language: #3679ED blue, white/light gray surfaces, thin #e8e9ed borders, compact collaboration controls and avatars, rounded cards and contextual dialogs. Lock SVG extracted into `src/figma/primitives.tsx`; supplied selected SVG assets preserved under `public/assets/figma`. Original consensus source preserved under `src/figma/consensus.ts`; the existing unified tested canonical voting reducer remains authoritative instead of introducing a second vote store.
+
+Original unified discussion, sorting/voting/conflict resolution, item workflows, context library and member access components are reused against the same persistent canonical base. The prior manual handoff builder is replaced in the primary automated navigation by task-triggered orchestration; a deliberate manual preparation flow remains solely for baseline condition A. Original App source remains preserved. Old private workspace records are inspectable per owner in the new private workspace.
+
+Responsive grid becomes two columns on tablet and stacked navigation/content/inspector on narrow screens. Native dialogs, labeled inputs, visible focus, status announcements and reduced-motion CSS support accessible exploration. The appearance switch is a prototype theme treatment, not a separate design system.

@@ -42,3 +42,8 @@ npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
 Use the walkthrough in README and RESEARCH_MODE. All source data is fictional; no external provider transmission, invitations or deployment was performed. Browser checks are a recorded manual walkthrough, not an automated cross-browser suite. Automated tests exercise domain/repository behavior rather than rendering screenshots.
+
+
+## GitHub Pages deployment — 2026-10-27
+
+Live URL: https://kartika6.github.io/crossville-unified/ . Re-ran all 35 tests and built with `npm run build:pages` (Vite base `/crossville-unified/`). Published `.nojekyll`, index.html and the generated JS/CSS assets to the root of `gh-pages`, deployment commit `2c78b0bf21677222f00bd14bb0b79026705e78e3`. GitHub Pages settings confirmed that source. The hosted URL returned HTTP 200, rendered the React application, and live Handoff builder recommendations selected 6 permitted items while private/unconfirmed/conflicting sources remained disabled. The source repository is now public. Deployments are explicit snapshots; editing main does not automatically republish.

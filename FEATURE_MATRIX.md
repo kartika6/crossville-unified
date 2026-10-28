@@ -48,3 +48,15 @@ Legend: B = supplied GitHub ZIP; R = available root React prototype; A = browser
 | JSON project import/export | New | Whole-local-state round trip with schema and structure validation |
 
 No real external integration existed in available code. No real AI adapter was removed. Prototypes remain runnable independently in the root and `../chatgpt-prototype`.
+
+## Adaptive revision
+
+| Feature | Treatment |
+|---|---|
+| Shared context, sorting, voting, comments, constraints, questions | Preserved through canonical legacy reducers and reused shared-workspace tools |
+| Old private records and versioned packets | Preserved in migrated base; per-owner archive and immutable history |
+| Manual handoff builder as primary navigation | Deliberately replaced by task-triggered automation; manual preparation retained in baseline A |
+| Manual routine sync | Replaced by policy-authorized selective automatic sync; review/decline preserved for held changes |
+| Handoff/source inspector | Integrated into Crossville Context in explainable condition C |
+| Research comparison | Expanded to manual, automated opaque and automated explainable |
+| Project versions, import/export | Preserved and extended with schema 2 backups and recipient change coverage |

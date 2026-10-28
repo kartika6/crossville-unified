@@ -24,3 +24,15 @@ B's private simulation receives typed projections from the recipient context. Hu
 
 ## Persistence and limitations
 One localStorage key, `crossville-unified-v1`, persists all fictional research state on every successful transition; imports are validated before replacement. Storage failure reports an error and does not claim a save. A malformed existing store falls back to seed in memory; exporting a prior browser backup is recommended for real study operations. Whole-project JSON includes private simulation records and is intended for the local study administrator. This is not encryption or production authorization. No cross-device or simultaneous multi-tab merge is implemented; use one browser tab per study session. LocalStorage capacity limits long studies; JSON exports provide backup. All external tools remain clearly marked simulations.
+
+## Adaptive simulation (October 2026)
+
+The entry point is now `src/adaptive/AdaptiveApp.tsx`. It reuses the original canonical `State`, collaboration reducers, discussion, item workflow, people access, sorting and context library. Original source projects remain intact. `src/adaptive/types.ts` adds recipient tasks, private candidates, immutable orchestration jobs, per-change coverage and study events.
+
+`reduceAdaptive` is a deterministic event-driven orchestration service, separate from React. Task starts queue six real stages; each stage computes permissions, selection, snapshot or local receipt. `ContextSelectionEngine` is implemented in `selection.ts`: privacy and membership precede status/conflict checks, then dependency, category and tag rules. Private/unauthorized contents and references are redacted from selection explanations. Pending and superseded items cannot become current recipient facts.
+
+Approved multi-field proposals produce one project version and trigger evaluations for subscribed recipients. Changes are merged by ID, never by replacing an entire ongoing workspace. Routine eligible changes apply automatically; critical changes default to review. `coverage`, held and deferred changes prevent partial delivery from falsely claiming full synchronization. Permission checks run again at delivery. Historical packets and messages remain snapshots. Deduplication keys include task, canonical version and policy revision.
+
+The local delivery adapter writes workspaces, receipts, sync events and simulated messages. A future real provider adapter can replace this boundary, with explicit consent, provider-specific authorization, acknowledgement/error handling and server-side permission enforcement. No real provider is connected here.
+
+`SimulationRepository` persists schema 2 to `crossville-adaptive-v2`. Existing schema 1 is migrated into the same canonical base, with the original key retained for restoration. Backups/imports and original browser-project restoration are in Automation settings. Local collaborator switching demonstrates roles; it is not a security boundary or real authentication.

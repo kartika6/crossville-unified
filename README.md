@@ -70,3 +70,18 @@ Research mode provides six scenarios, **Baseline** manual text handoff and **Cro
 - [RESEARCH_MODE.md](RESEARCH_MODE.md): study conditions, tasks, reset and logging.
 - [VERIFICATION.md](VERIFICATION.md): automated checks and actual browser walkthrough evidence.
 - [docs/CONTEXT_HANDOFF.md](docs/CONTEXT_HANDOFF.md): implementation handoff for future developers.
+
+
+## Live prototype and GitHub Pages
+
+**Open the interactive prototype:** https://kartika6.github.io/crossville-unified/
+
+The public GitHub Pages site serves an explicit production snapshot from the root of the `gh-pages` branch. The `main` branch contains editable source.
+
+```sh
+npm ci
+npm test
+npm run build:pages
+```
+
+`build:pages` uses the `/crossville-unified/` asset base path. To update the hosted prototype, publish the contents of `dist/` plus an empty `.nojekyll` file to the `gh-pages` branch. Source edits on `main` do not automatically rebuild the hosted snapshot. No participant browser data, personal localStorage state, credentials or installed dependencies are deployed.
